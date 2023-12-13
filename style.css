@@ -5,26 +5,34 @@
 }
 /* reset */
 
-
-/* i container hanno una dimensione fissa,  centrati orizzontalmente */
 .container {
     
-    /* test */
-
-    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    
+      
+}
+
+.container div{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.container img{
+    padding: 0px 250px;
 }
 
 .container-small {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+    color: #FFFFFF;
     
-    /* test */
-
-    max-width: 800px;
-
-    margin-left: auto;
-    margin-right: auto;
+    font-weight: normal;
+   
+    width: 240px;
+    height: 150px;
 }
 
 
@@ -41,21 +49,12 @@ header, section {
 
 
 /* sezione navbar */
-nav {
-    background-color: #add8e6;
-    /* test */
-    padding: 10px ;
-}
 
-nav .container > * {
-  
-    /* test */
 
-    padding: 10px;
-}
+
 
 nav .container {
-    background-color: #daa520;
+    background-color: #2175c2;
     /* test */
 
     display: flex;
@@ -79,8 +78,11 @@ nav .nav-links ul {
 
 
 nav .login {
-    width: 100px;
-    text-align: right;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
 }
 /* fine sezione navbar */
 
@@ -91,13 +93,15 @@ nav .login {
     background-image: url(./img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
    
     /* test */
 }
 
 #hero .container-small {
     height: 300px;
-    /* test */
+    
 }
 
 
@@ -121,8 +125,7 @@ nav .login {
     height: 400px;
    
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+   
     width: 400px;
 }
 
@@ -135,7 +138,7 @@ nav .login {
 }
 
 .column-small-two{
-    background-color: #ffc0cb;
+   
     height: 400px;
    
     display: flex;
